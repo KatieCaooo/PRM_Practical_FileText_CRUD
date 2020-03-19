@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/book_item_background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/book_id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Id: " />
+
+        <TextView
+            android:id="@+id/book_id_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/book_id_title"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/book_price_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/book_price_value"
+            android:text="Book Price: " />
+
+        <TextView
+            android:id="@+id/book_price_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="15.00" />
+
+        <TextView
+            android:id="@+id/book_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_id_title"
+            android:text="Book Name: " />
+
+        <TextView
+            android:id="@+id/book_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_id_value"
+            android:layout_toRightOf="@id/book_name_title"
+            android:text="My Book" />
+
+        <TextView
+            android:id="@+id/time_of_creation_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_price_value"
+            android:layout_alignParentRight="true"
+            android:text="2020-15-03" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

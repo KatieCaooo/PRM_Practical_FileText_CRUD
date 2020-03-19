@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Book Demo</string>
+
+    <string-array name="statusArray">
+        <item>Disable</item>
+        <item>Available</item>
+    </string-array>
+</resources>

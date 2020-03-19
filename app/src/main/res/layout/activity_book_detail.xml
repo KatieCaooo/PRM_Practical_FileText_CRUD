@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtBookId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Id: "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtBookId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtBookId"
+        android:background="@android:color/transparent"
+        android:text=""
+        android:hint="Id"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtBookId"
+        android:text="Book Name: "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtBookId"
+        android:layout_toRightOf="@id/txtBookName"
+        android:background="@android:color/transparent"
+        android:text=""
+        android:hint="Name"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtBookDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtBookName"
+        android:text="Book Description: "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtBookDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtBookName"
+        android:layout_toRightOf="@id/txtBookDescription"
+        android:background="@android:color/transparent"
+        android:text=""
+        android:hint="Description"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtBookDescription"
+        android:text="Book Status: "
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinnerStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtBookDescription"
+        android:layout_toRightOf="@id/txtStatus"
+        android:entries="@array/statusArray" />
+
+    <TextView
+        android:id="@+id/txtTimeOfCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtStatus"
+        android:text="Time of Create: "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtTimeOfCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtStatus"
+        android:layout_toRightOf="@id/txtTimeOfCreate"
+        android:background="@android:color/transparent"
+        android:text=""
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTimeOfCreate"
+        android:text="Price: "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTimeOfCreate"
+        android:layout_toRightOf="@id/txtPrice"
+        android:background="@android:color/transparent"
+        android:text=""
+        android:hint="Price"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/updateBtnLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPrice"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickToUpdate"
+            android:text="Update" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickToDelete"
+            android:text="Delete" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickToCancle"
+            android:text="Cancel" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrice"
+        android:layout_centerHorizontal="true"
+        android:text="Create"
+        android:onClick="clickToCreate"
+        android:visibility="gone" />
+</RelativeLayout>
